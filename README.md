@@ -1,4 +1,4 @@
-> **_NOTE:_**  The project is for learning purposes only. All the data used in the system is not real and is pre-added. It only clones the front-end and some basic event handling operations, which are based on the Foody(https://play.google.com/store/apps/details?id=com.foody.vn.activity&hl=vi&gl=US) app.
+> **_NOTE:_**  The project is for learning purposes only. All the data used in the system is not real and is pre-added. It only clones the front-end and some basic event handling operations, which are based on the [Foody](https://play.google.com/store/apps/details?id=com.foody.vn.activity&hl=vi&gl=US) app.
 
 # FoodyClone
 
