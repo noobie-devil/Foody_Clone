@@ -13,8 +13,8 @@ This is the source code of the online food ordering application project made whi
 
 ## Contents
 
-- [Functions](https://github.com/truongnguyenvan8801/Foody_Clone/blob/master/README.md#Functions)
-- [Tech](https://github.com/truongnguyenvan8801/Foody_Clone/blob/master/README.md#Tech)
+- [Functions](https://github.com/truongnguyenvan8801/Foody_Clone#Functions)
+- [Tech](https://github.com/truongnguyenvan8801/Foody_Clone#Tech)
 - [Images](https://github.com/truongnguyenvan8801/Foody_Clone#Images)
 
 
