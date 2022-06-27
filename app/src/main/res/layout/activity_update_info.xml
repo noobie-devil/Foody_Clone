@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#9F9F9F"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/updateInfoActivity_toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/primary_color"
+        android:elevation="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_scrollFlags="exitUntilCollapsed">
+
+        <RelativeLayout
+            android:id="@+id/updateInfoActivity_relativelayout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/updateInfoActivity_textview_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontawesome_pro_solid900"
+                android:text="\uf104"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:paddingStart="10dp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/updateInfoActivity_textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Thông tin tài khoản"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                tools:ignore="NotSibling" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/updateInfoActivity_linearlayout_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.25"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="Họ và tên"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_user_solid"
+            app:startIconTint="#FF646464">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateInfoActivity_edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:hint="Số điện thoại"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_phone_solid"
+            app:startIconTint="#FF646464">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateInfoActivity_edittext_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:hint="Địa chỉ"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_location_dot_solid"
+            app:startIconTint="#FF646464">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateInfoActivity_edittext_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_email_solid"
+            app:startIconTint="#FF646464">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateInfoActivity_edittext_email"
+                android:background="#DCDCDC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateInfoActivity_button_save"
+        style="@style/Button.Save"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:layout_gravity="center"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="45dp"
+        android:inputType="textCapWords"
+        android:text="Lưu"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/updateInfoActivity_linearlayout_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="Nhập mật khẩu cũ"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_lock_open_solid"
+            app:startIconTint="#FF646464">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateInfoActivity_edittext_password_old"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:hint="Nhập mật khẩu mới"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_lock_solid"
+            app:startIconTint="#FF646464">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateInfoActivity_edittext_password_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:hint="Nhập lại mật khẩu mới"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_lock_keyhole_solid"
+            app:startIconTint="#FF646464">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/updateInfoActivity_edittext_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateInfoActivity_button_change"
+        style="@style/Button.Save"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:layout_gravity="center"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:inputType="textCapWords"
+        android:text="Đổi mật khẩu"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateInfoActivity_button_logout"
+        style="@style/Button.SignOut"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:text="Đăng Xuất"
+        android:textColor="#454545"
+        android:inputType="textCapWords"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

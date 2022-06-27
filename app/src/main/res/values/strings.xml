@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Foody_18</string>
+    <string name="forget_password"><u>Quên mật khẩu?</u></string>
+    <string name="policy_signin_text_1">Chúng tôi sẽ không sử dụng thông tin của bạn với bất kỳ mục đích nào khác.</string>
+    <string name="policy_signin_text_2">Bằng cách đăng nhập hoặc đăng ký, bạn đồng ý với <u>Chính sách quy định của Foody.</u></string>
+    <string name="string_login"><u>Đăng nhập</u></string>
+    <string name="string_resgister"><u>Đăng ký</u></string>
+</resources>

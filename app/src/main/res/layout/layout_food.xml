@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/foodLayout_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/foodLayout_linearlayout_title"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:weightSum="10"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:background="@drawable/underline">
+
+            <ImageView
+                android:id="@+id/foodLayout_image_food"
+                android:layout_width="0dp"
+                android:layout_height="115dp"
+                android:layout_weight="3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/example_image_shop"
+                android:contentDescription="TODO" />
+
+            <LinearLayout
+                android:id="@+id/foodLayout_linearlayout_detail"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="115dp"
+                android:layout_weight="7"
+                android:paddingLeft="14dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/foodLayout_textview_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Bánh crepe ngập sầu (4 cái)"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/foodLayout_textview_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Hộp 4 cái"
+                    android:textColor="#9F9F9F"
+                    android:paddingBottom="4dp"
+                    android:textSize="12sp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/foodLayout_textview_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="999+ đã bán | 100+ thích"
+                    android:textColor="#9F9F9F"
+                    android:textSize="12sp"
+                    android:paddingBottom="4dp" />
+
+                <RelativeLayout
+                    android:id="@+id/foodLayout_relativelayout_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/foodLayout_textview_totalPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="5dp"
+                        android:text="50,000đ"
+                        android:textColor="@color/primary_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/foodLayout_linearlayout_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/foodLayout_textview_totalPrice"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/foodLayout_linearlayout_quantity_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/foodLayout_button_decrease"
+                                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                android:layout_width="30dp"
+                                android:layout_height="28dp"
+                                android:insetLeft="0dp"
+                                android:insetTop="0dp"
+                                android:insetRight="0dp"
+                                android:insetBottom="0dp"
+                                app:icon="@drawable/ic_minus_light"
+                                app:iconGravity="textStart"
+                                app:iconPadding="0dp"
+                                app:iconSize="15sp"
+                                app:iconTint="@color/primary_color"
+                                app:strokeColor="@color/primary_color" />
+
+                            <TextView
+                                android:id="@+id/foodLayout_textview_quantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="15dp"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/foodLayout_button_increase"
+                                android:layout_width="30dp"
+                                android:layout_height="28dp"
+                                android:layout_alignParentRight="true"
+                                android:backgroundTint="@color/primary_color"
+                                android:insetLeft="0dp"
+                                android:insetTop="0dp"
+                                android:insetRight="0dp"
+                                android:insetBottom="0dp"
+                                app:icon="@drawable/ic_plus_light"
+                                app:iconGravity="textStart"
+                                app:iconPadding="0dp"
+                                app:iconSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
